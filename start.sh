@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo Starting Freshclam in background...
+freshclam -d
+echo Starting clamd...
+exec clamd --config-file=/etc/clamav/clamd.conf
